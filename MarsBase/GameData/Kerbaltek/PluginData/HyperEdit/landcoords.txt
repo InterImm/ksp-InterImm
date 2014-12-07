@@ -1,0 +1,6 @@
+Airstrip Island Beach - Wet,-1.498,-72.088
+KSC Launch Pad,-.1027,-74.574
+KSC Runway,-.0403,-74.717
+KSC Beach - Wet,-.0435,-74.39
+Toolbox,0,0.005
+Dropping Site,0.05,0.1
