@@ -1,0 +1,7274 @@
+ship = GroundStorage-Full
+version = 0.90.0
+description = No description.
+type = None
+size = 6.804702,4.155617,6.804702
+PART
+{
+	part = stackSeparator_4293490398
+	partName = Part
+	pos = -0.0016618,19.94547,0.002016619
+	attPos = 0,0,0
+	attPos0 = 0,-0.4958057,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 1
+	sidx = 0
+	sqor = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4293711820
+	attN = bottom,trussPiece3x_4293711820
+	attN = top,fuelTankSmallFlat_4293716788
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussPiece3x_4293711820
+	partName = Part
+	pos = -0.0016618,18.28692,0.002016619
+	attPos = 0,0,0
+	attPos0 = 0,-1.658545,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4293711040
+	link = trussPiece3x_4293710542
+	link = trussPiece3x_4293710518
+	link = trussPiece3x_4293710494
+	attN = top,stackSeparator_4293490398
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4293711040
+	partName = Part
+	pos = -0.001661771,17.10318,-1.798052
+	attPos = 0,0,0
+	attPos0 = 2.839761E-08,-1.183737,-1.800069
+	rot = 0,0.7071067,-0.7071069,0
+	attRot = 0,0,0,1
+	attRot0 = 0,0.7071067,-0.7071069,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.ContainerBay1_4293646180
+	link = KAS.ContainerBay1_4293645572
+	link = KAS.ContainerBay1_4293644884
+	link = KAS.ContainerBay1_4293643126
+	link = KAS.ContainerBay1_4293642188
+	link = KAS.ContainerBay1_4293641170
+	link = strutConnector_4293597464
+	link = KAS.Pylon1_4293503608
+	sym = trussPiece3x_4293710542
+	sym = trussPiece3x_4293710518
+	sym = trussPiece3x_4293710494
+	srfN = srfAttach,trussPiece3x_4293711820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293646180
+	partName = Part
+	pos = 0.7268134,17.10318,-2.91517
+	attPos = 0,0,0
+	attPos0 = -0.7284743,1.117118,-1.153431E-06
+	rot = -1.192093E-07,2.980232E-07,0.7071068,-0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000002,-0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293637902
+	sym = KAS.ContainerBay1_4293647220
+	sym = KAS.ContainerBay1_4293646152
+	sym = KAS.ContainerBay1_4293646124
+	srfN = srfAttach,trussPiece3x_4293711040
+	attN = bottom,KAS.Container2_4293637902
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293637902
+	partName = Part
+	pos = 0.7041138,17.10318,-2.915171
+	attPos = 0,0,0
+	attPos0 = 0,-0.02269965,-4.619541E-07
+	rot = -0.7071068,-0.7071069,-5.960464E-08,-1.192093E-07
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = 0,1,-2.622444E-07,-1.998064E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 4200
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293639478
+	sym = KAS.Container2_4293637938
+	sym = KAS.Container2_4293637866
+	attN = bottom,KAS.ContainerBay1_4293646180
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 4
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293645572
+	partName = Part
+	pos = 0.7272962,17.10318,-2.133125
+	attPos = 0,0,0
+	attPos0 = -0.728957,0.3350728,-1.01359E-06
+	rot = -1.192093E-07,2.980232E-07,0.7071068,-0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000002,-0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293636710
+	sym = KAS.ContainerBay1_4293646042
+	sym = KAS.ContainerBay1_4293645544
+	sym = KAS.ContainerBay1_4293645516
+	srfN = srfAttach,trussPiece3x_4293711040
+	attN = bottom,KAS.Container2_4293636710
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293636710
+	partName = Part
+	pos = 0.7045966,17.10318,-2.133125
+	attPos = 0,0,0
+	attPos0 = 0,-0.02269959,-2.235356E-07
+	rot = -0.7071068,-0.7071069,-5.960464E-08,-1.192093E-07
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = 0,1,-2.622444E-07,-1.998064E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 4200
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293637752
+	sym = KAS.Container2_4293636754
+	sym = KAS.Container2_4293636666
+	attN = bottom,KAS.ContainerBay1_4293645572
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 4
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293644884
+	partName = Part
+	pos = 0.725477,17.10318,-1.347394
+	attPos = 0,0,0
+	attPos0 = -0.727138,-0.4506584,-8.730905E-07
+	rot = -1.192093E-07,2.980232E-07,0.7071068,-0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000002,-0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293635502
+	sym = KAS.ContainerBay1_4293645434
+	sym = KAS.ContainerBay1_4293644856
+	sym = KAS.ContainerBay1_4293644828
+	srfN = srfAttach,trussPiece3x_4293711040
+	attN = bottom,KAS.Container2_4293635502
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293635502
+	partName = Part
+	pos = 0.7027774,17.10318,-1.347394
+	attPos = 0,0,0
+	attPos0 = 0,-0.02269959,-2.235356E-07
+	rot = -0.7071068,-0.7071069,-5.960464E-08,-1.192093E-07
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = 0,1,-2.622444E-07,-1.998064E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 4200
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293636544
+	sym = KAS.Container2_4293635554
+	sym = KAS.Container2_4293635450
+	attN = bottom,KAS.ContainerBay1_4293644884
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 4
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293643126
+	partName = Part
+	pos = -0.7291666,17.10318,-2.926024
+	attPos = 0,0,0
+	attPos0 = 0.7275038,1.127972,-1.155371E-06
+	rot = -2.980232E-07,-1.192093E-07,0.7071068,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999999,-0.5000002
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293629692
+	sym = KAS.ContainerBay1_4293644746
+	sym = KAS.ContainerBay1_4293643098
+	sym = KAS.ContainerBay1_4293643070
+	srfN = srfAttach,trussPiece3x_4293711040
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293629692
+	partName = Part
+	pos = -0.706467,17.10318,-2.926024
+	attPos = 0,0,0
+	attPos0 = 0,-0.02269959,-1.488301E-08
+	rot = 0.7071068,-0.7071068,-2.980232E-08,-8.940697E-08
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = 0,-1,-3.129244E-07,-2.533197E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 4200
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293633486
+	sym = KAS.Container2_4293629632
+	sym = KAS.Container2_4293629572
+	attN = bottom,KAS.ContainerBay1_4293643126
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 4
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293642188
+	partName = Part
+	pos = -0.7289662,17.10318,-2.198453
+	attPos = 0,0,0
+	attPos0 = 0.7273036,0.4004007,-1.025272E-06
+	rot = -2.980232E-07,-1.192093E-07,0.7071068,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999999,-0.5000002
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293628226
+	sym = KAS.ContainerBay1_4293642988
+	sym = KAS.ContainerBay1_4293642160
+	sym = KAS.ContainerBay1_4293642132
+	srfN = srfAttach,trussPiece3x_4293711040
+	attN = bottom,KAS.Container2_4293628226
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293628226
+	partName = Part
+	pos = -0.7062666,17.10318,-2.198453
+	attPos = 0,0,0
+	attPos0 = 0,-0.02269959,-1.488301E-08
+	rot = 0.7071068,-0.7071068,-2.980232E-08,-8.940697E-08
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = 0,-1,-3.129244E-07,-2.533197E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 16500
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293629434
+	sym = KAS.Container2_4293628158
+	sym = KAS.Container2_4293628090
+	attN = bottom,KAS.ContainerBay1_4293642188
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = sensorThermometer
+			qty = 1
+		}
+		CONTENT
+		{
+			name = sensorGravimeter
+			qty = 1
+		}
+		CONTENT
+		{
+			name = sensorBarometer
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293641170
+	partName = Part
+	pos = -0.7298381,17.10318,-1.535705
+	attPos = 0,0,0
+	attPos0 = 0.7281755,-0.2623468,-9.067631E-07
+	rot = -2.980232E-07,-1.192093E-07,0.7071068,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999999,-0.5000002
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293626978
+	sym = KAS.ContainerBay1_4293642050
+	sym = KAS.ContainerBay1_4293641142
+	sym = KAS.ContainerBay1_4293641114
+	srfN = srfAttach,trussPiece3x_4293711040
+	attN = bottom,KAS.Container2_4293626978
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293626978
+	partName = Part
+	pos = -0.7071385,17.10318,-1.535705
+	attPos = 0,0,0
+	attPos0 = 0,-0.02269959,2.235356E-07
+	rot = 0.7071068,-0.7071068,-2.980232E-08,-8.940697E-08
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = 0,-1,-3.129244E-07,-2.533197E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293627944
+	sym = KAS.Container2_4293626902
+	sym = KAS.Container2_4293626826
+	attN = bottom,KAS.ContainerBay1_4293641170
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4293597464
+	partName = CompoundPart
+	pos = 0.08405627,17.42309,-2.331434
+	attPos = 0,0,0
+	attPos0 = -0.08571792,0.5333818,-0.3199054
+	rot = 0.4304596,-0.5609853,0.5609856,-0.4304594
+	attRot = 0,0,0,1
+	attRot0 = 0,0.6087615,5.960464E-08,-0.7933533
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4293599096
+	sym = strutConnector_4293597400
+	sym = strutConnector_4293597336
+	srfN = srfAttach,trussPiece3x_4293711040
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4293617686
+		pos = -0.9984682,-0.3157517,-0.3880482
+		rot = 0,1.662364E-08,0.7071071,0.7071065
+		dir = -0.8940516,-0.2827338,-0.3474671
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Pylon1_4293503608
+	partName = Part
+	pos = -0.001661819,17.63926,-2.921043
+	attPos = 0,0,0
+	attPos0 = 4.796312E-08,1.122991,-0.5360834
+	rot = 1.788139E-07,1.518918E-18,-1.518919E-18,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,0.7071068,-0.7071068,2.148075E-18
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Pylon1_4293695340
+	sym = KAS.Pylon1_4293503572
+	sym = KAS.Pylon1_4293503536
+	srfN = srfAttach,trussPiece3x_4293711040
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussPiece3x_4293710542
+	partName = Part
+	pos = -1.801731,17.10318,0.002016483
+	attPos = 0,0,0
+	attPos0 = -1.800069,-1.183737,-1.356901E-07
+	rot = -0.5000001,0.4999999,-0.5000001,-0.4999999
+	attRot = 0,0,0,1
+	attRot0 = -0.5000001,0.4999999,-0.5000001,-0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.ContainerBay1_4293647220
+	link = KAS.ContainerBay1_4293646042
+	link = KAS.ContainerBay1_4293645434
+	link = KAS.ContainerBay1_4293644746
+	link = KAS.ContainerBay1_4293642988
+	link = KAS.ContainerBay1_4293642050
+	link = strutConnector_4293599096
+	link = KAS.Pylon1_4293695340
+	sym = trussPiece3x_4293711040
+	sym = trussPiece3x_4293710518
+	sym = trussPiece3x_4293710494
+	srfN = srfAttach,trussPiece3x_4293711820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293647220
+	partName = Part
+	pos = -2.918848,17.10318,-0.7264575
+	attPos = 0,0,0
+	attPos0 = -0.7284739,1.117118,-1.266346E-06
+	rot = 0.4999999,-0.4999998,0.5,-0.5000004
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000002,-0.4999998
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293637938
+	sym = KAS.ContainerBay1_4293646180
+	sym = KAS.ContainerBay1_4293646152
+	sym = KAS.ContainerBay1_4293646124
+	srfN = srfAttach,trussPiece3x_4293710542
+	attN = bottom,KAS.Container2_4293637938
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293637938
+	partName = Part
+	pos = -2.918849,17.10318,-0.7037575
+	attPos = 0,0,0
+	attPos0 = -2.706088E-09,-0.02270001,-4.612774E-07
+	rot = -0.5000001,-0.5000001,0.4999999,0.5000001
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = -2.980232E-08,1,-2.682209E-07,-1.788139E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3900
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293639478
+	sym = KAS.Container2_4293637902
+	sym = KAS.Container2_4293637866
+	attN = bottom,KAS.ContainerBay1_4293647220
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 2
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293646042
+	partName = Part
+	pos = -2.136803,17.10318,-0.7269402
+	attPos = 0,0,0
+	attPos0 = -0.7289566,0.3350727,-9.866073E-07
+	rot = 0.4999999,-0.4999998,0.5,-0.5000004
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000002,-0.4999998
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293636754
+	sym = KAS.ContainerBay1_4293645572
+	sym = KAS.ContainerBay1_4293645544
+	sym = KAS.ContainerBay1_4293645516
+	srfN = srfAttach,trussPiece3x_4293710542
+	attN = bottom,KAS.Container2_4293636754
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293636754
+	partName = Part
+	pos = -2.136803,17.10318,-0.7042403
+	attPos = 0,0,0
+	attPos0 = -2.706088E-09,-0.02269995,-2.228588E-07
+	rot = -0.5000001,-0.5000001,0.4999999,0.5000001
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = -2.980232E-08,1,-2.682209E-07,-1.788139E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293637752
+	sym = KAS.Container2_4293636710
+	sym = KAS.Container2_4293636666
+	attN = bottom,KAS.ContainerBay1_4293646042
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293645434
+	partName = Part
+	pos = -1.351072,17.10318,-0.7251212
+	attPos = 0,0,0
+	attPos0 = -0.7271376,-0.4506583,-7.05825E-07
+	rot = 0.4999999,-0.4999998,0.5,-0.5000004
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000002,-0.4999998
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293635554
+	sym = KAS.ContainerBay1_4293644884
+	sym = KAS.ContainerBay1_4293644856
+	sym = KAS.ContainerBay1_4293644828
+	srfN = srfAttach,trussPiece3x_4293710542
+	attN = bottom,KAS.Container2_4293635554
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293635554
+	partName = Part
+	pos = -1.351072,17.10318,-0.7024214
+	attPos = 0,0,0
+	attPos0 = -2.706031E-09,-0.02269983,-1.036496E-07
+	rot = -0.5000001,-0.5000001,0.4999999,0.5000001
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = -2.980232E-08,1,-2.682209E-07,-1.788139E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 5100
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293636544
+	sym = KAS.Container2_4293635502
+	sym = KAS.Container2_4293635450
+	attN = bottom,KAS.ContainerBay1_4293645434
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 2
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = sensorThermometer
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293644746
+	partName = Part
+	pos = -2.929702,17.10318,0.72952
+	attPos = 0,0,0
+	attPos0 = 0.7275035,1.127972,-1.443794E-06
+	rot = 0.4999997,0.5,0.5000003,0.5000001
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999998,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293633486
+	sym = KAS.ContainerBay1_4293643126
+	sym = KAS.ContainerBay1_4293643098
+	sym = KAS.ContainerBay1_4293643070
+	srfN = srfAttach,trussPiece3x_4293710542
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293633486
+	partName = Part
+	pos = -2.929702,17.10318,0.7068201
+	attPos = 0,0,0
+	attPos0 = -2.705974E-09,-0.02269989,-1.353019E-08
+	rot = 0.5000001,-0.5000001,-0.5000001,0.4999999
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = 2.980232E-08,-1,-2.980232E-07,-2.682209E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293629692
+	sym = KAS.Container2_4293629632
+	sym = KAS.Container2_4293629572
+	attN = bottom,KAS.ContainerBay1_4293644746
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293642988
+	partName = Part
+	pos = -2.202131,17.10318,0.7293198
+	attPos = 0,0,0
+	attPos0 = 0.7273032,0.4004006,-1.18357E-06
+	rot = 0.4999997,0.5,0.5000003,0.5000001
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999998,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293629434
+	sym = KAS.ContainerBay1_4293642188
+	sym = KAS.ContainerBay1_4293642160
+	sym = KAS.ContainerBay1_4293642132
+	srfN = srfAttach,trussPiece3x_4293710542
+	attN = bottom,KAS.Container2_4293629434
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293629434
+	partName = Part
+	pos = -2.202131,17.10318,0.7066198
+	attPos = 0,0,0
+	attPos0 = -2.706088E-09,-0.02269995,-1.353023E-08
+	rot = 0.5000001,-0.5000001,-0.5000001,0.4999999
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = 2.980232E-08,-1,-2.980232E-07,-2.682209E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293628226
+	sym = KAS.Container2_4293628158
+	sym = KAS.Container2_4293628090
+	attN = bottom,KAS.ContainerBay1_4293642988
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293642050
+	partName = Part
+	pos = -1.539384,17.10318,0.7301916
+	attPos = 0,0,0
+	attPos0 = 0.7281751,-0.2623468,-9.466572E-07
+	rot = 0.4999997,0.5,0.5000003,0.5000001
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999998,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293627944
+	sym = KAS.ContainerBay1_4293641170
+	sym = KAS.ContainerBay1_4293641142
+	sym = KAS.ContainerBay1_4293641114
+	srfN = srfAttach,trussPiece3x_4293710542
+	attN = bottom,KAS.Container2_4293627944
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293627944
+	partName = Part
+	pos = -1.539384,17.10318,0.7074916
+	attPos = 0,0,0
+	attPos0 = -2.706173E-09,-0.02270007,2.248883E-07
+	rot = 0.5000001,-0.5000001,-0.5000001,0.4999999
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = 2.980232E-08,-1,-2.980232E-07,-2.682209E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293626978
+	sym = KAS.Container2_4293626902
+	sym = KAS.Container2_4293626826
+	attN = bottom,KAS.ContainerBay1_4293642050
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4293599096
+	partName = CompoundPart
+	pos = -2.335112,17.42309,-0.08370136
+	attPos = 0,0,0
+	attPos0 = -0.08571788,0.5333817,-0.3199055
+	rot = 0.7010576,-0.7010573,0.09229591,0.09229589
+	attRot = 0,0,0,1
+	attRot0 = 0,0.6087615,5.960464E-08,-0.7933533
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4293597464
+	sym = strutConnector_4293597400
+	sym = strutConnector_4293597336
+	srfN = srfAttach,trussPiece3x_4293710542
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4293617650
+		pos = -0.9984685,-0.3157514,-0.3880474
+		rot = 0,-4.413189E-07,0.7071068,0.7071067
+		dir = -0.8940516,-0.2827338,-0.3474671
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Pylon1_4293695340
+	partName = Part
+	pos = -2.924722,17.63926,0.002016531
+	attPos = 0,0,0
+	attPos0 = 4.796311E-08,1.122991,-0.5360837
+	rot = 1.192093E-07,-0.7071068,-1.192093E-07,-0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0,0.7071068,-0.7071068,-5.113243E-09
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Pylon1_4293503608
+	sym = KAS.Pylon1_4293503572
+	sym = KAS.Pylon1_4293503536
+	srfN = srfAttach,trussPiece3x_4293710542
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussPiece3x_4293710518
+	partName = Part
+	pos = -0.001661671,17.10318,1.802086
+	attPos = 0,0,0
+	attPos0 = 1.289694E-07,-1.183737,1.800069
+	rot = -0.7071069,-3.090862E-08,3.090863E-08,-0.7071067
+	attRot = 0,0,0,1
+	attRot0 = -0.7071069,-3.090862E-08,3.090863E-08,-0.7071067
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.ContainerBay1_4293646152
+	link = KAS.ContainerBay1_4293645544
+	link = KAS.ContainerBay1_4293644856
+	link = KAS.ContainerBay1_4293643098
+	link = KAS.ContainerBay1_4293642160
+	link = KAS.ContainerBay1_4293641142
+	link = strutConnector_4293597400
+	link = KAS.Pylon1_4293503572
+	sym = trussPiece3x_4293711040
+	sym = trussPiece3x_4293710542
+	sym = trussPiece3x_4293710494
+	srfN = srfAttach,trussPiece3x_4293711820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293646152
+	partName = Part
+	pos = -0.7301354,17.10318,2.919204
+	attPos = 0,0,0
+	attPos0 = -0.7284739,1.117118,-1.486358E-06
+	rot = 0.7071068,-0.7071068,7.395266E-08,-2.671146E-07
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000001,-0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293639478
+	sym = KAS.ContainerBay1_4293647220
+	sym = KAS.ContainerBay1_4293646180
+	sym = KAS.ContainerBay1_4293646124
+	srfN = srfAttach,trussPiece3x_4293710518
+	attN = bottom,KAS.Container2_4293639478
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293639478
+	partName = Part
+	pos = -0.7074354,17.10318,2.919204
+	attPos = 0,0,0
+	attPos0 = 1.352788E-09,-0.02270007,-4.633069E-07
+	rot = 1.106301E-09,5.960464E-08,0.7071067,0.7071067
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = 0,1,-2.622444E-07,-1.998064E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3700
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293637938
+	sym = KAS.Container2_4293637902
+	sym = KAS.Container2_4293637866
+	attN = bottom,KAS.ContainerBay1_4293646152
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 2
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 2
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293645544
+	partName = Part
+	pos = -0.7306183,17.10318,2.137158
+	attPos = 0,0,0
+	attPos0 = -0.7289566,0.3350727,-1.11345E-06
+	rot = 0.7071068,-0.7071068,7.395266E-08,-2.671146E-07
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000001,-0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293637752
+	sym = KAS.ContainerBay1_4293646042
+	sym = KAS.ContainerBay1_4293645572
+	sym = KAS.ContainerBay1_4293645516
+	srfN = srfAttach,trussPiece3x_4293710518
+	attN = bottom,KAS.Container2_4293637752
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293637752
+	partName = Part
+	pos = -0.7079182,17.10318,2.137158
+	attPos = 0,0,0
+	attPos0 = 1.352912E-09,-0.02270013,-2.248883E-07
+	rot = 1.106301E-09,5.960464E-08,0.7071067,0.7071067
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = 0,1,-2.622444E-07,-1.998064E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293636754
+	sym = KAS.Container2_4293636710
+	sym = KAS.Container2_4293636666
+	attN = bottom,KAS.ContainerBay1_4293645544
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293644856
+	partName = Part
+	pos = -0.7287993,17.10318,1.351427
+	attPos = 0,0,0
+	attPos0 = -0.7271376,-0.4506584,-7.387838E-07
+	rot = 0.7071068,-0.7071068,7.395266E-08,-2.671146E-07
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000001,-0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293636544
+	sym = KAS.ContainerBay1_4293645434
+	sym = KAS.ContainerBay1_4293644884
+	sym = KAS.ContainerBay1_4293644828
+	srfN = srfAttach,trussPiece3x_4293710518
+	attN = bottom,KAS.Container2_4293636544
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293636544
+	partName = Part
+	pos = -0.7060992,17.10318,1.351427
+	attPos = 0,0,0
+	attPos0 = 1.352973E-09,-0.02270013,-1.05679E-07
+	rot = 1.106301E-09,5.960464E-08,0.7071067,0.7071067
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = 0,1,-2.622444E-07,-1.998064E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293635554
+	sym = KAS.Container2_4293635502
+	sym = KAS.Container2_4293635450
+	attN = bottom,KAS.ContainerBay1_4293644856
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293643098
+	partName = Part
+	pos = 0.7258419,17.10318,2.930057
+	attPos = 0,0,0
+	attPos0 = 0.7275035,1.127972,-1.491533E-06
+	rot = 0.7071068,0.7071068,2.527666E-07,8.830066E-08
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999999,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293629632
+	sym = KAS.ContainerBay1_4293644746
+	sym = KAS.ContainerBay1_4293643126
+	sym = KAS.ContainerBay1_4293643070
+	srfN = srfAttach,trussPiece3x_4293710518
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293629632
+	partName = Part
+	pos = 0.7031419,17.10318,2.930057
+	attPos = 0,0,0
+	attPos0 = 0,-0.02270007,-1.35303E-08
+	rot = -3.090863E-08,2.086163E-07,-0.7071069,0.7071068
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = -5.107735E-15,-1,-3.129244E-07,-2.533197E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293633486
+	sym = KAS.Container2_4293629692
+	sym = KAS.Container2_4293629572
+	attN = bottom,KAS.ContainerBay1_4293643098
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293642160
+	partName = Part
+	pos = 0.7256416,17.10318,2.202486
+	attPos = 0,0,0
+	attPos0 = 0.7273032,0.4004008,-1.1446E-06
+	rot = 0.7071068,0.7071068,2.527666E-07,8.830066E-08
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999999,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293628158
+	sym = KAS.ContainerBay1_4293642988
+	sym = KAS.ContainerBay1_4293642188
+	sym = KAS.ContainerBay1_4293642132
+	srfN = srfAttach,trussPiece3x_4293710518
+	attN = bottom,KAS.Container2_4293628158
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293628158
+	partName = Part
+	pos = 0.7029415,17.10318,2.202486
+	attPos = 0,0,0
+	attPos0 = 0,-0.02270007,-1.35303E-08
+	rot = -3.090863E-08,2.086163E-07,-0.7071069,0.7071068
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = -5.107735E-15,-1,-3.129244E-07,-2.533197E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293629434
+	sym = KAS.Container2_4293628226
+	sym = KAS.Container2_4293628090
+	attN = bottom,KAS.ContainerBay1_4293642160
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293641142
+	partName = Part
+	pos = 0.7265134,17.10318,1.539739
+	attPos = 0,0,0
+	attPos0 = 0.7281751,-0.2623468,-8.285777E-07
+	rot = 0.7071068,0.7071068,2.527666E-07,8.830066E-08
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999999,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293626902
+	sym = KAS.ContainerBay1_4293642050
+	sym = KAS.ContainerBay1_4293641170
+	sym = KAS.ContainerBay1_4293641114
+	srfN = srfAttach,trussPiece3x_4293710518
+	attN = bottom,KAS.Container2_4293626902
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293626902
+	partName = Part
+	pos = 0.7038134,17.10318,1.539738
+	attPos = 0,0,0
+	attPos0 = -1.207923E-13,-0.02270007,2.248883E-07
+	rot = -3.090863E-08,2.086163E-07,-0.7071069,0.7071068
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = -5.107735E-15,-1,-3.129244E-07,-2.533197E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3950
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293627944
+	sym = KAS.Container2_4293626978
+	sym = KAS.Container2_4293626826
+	attN = bottom,KAS.ContainerBay1_4293641142
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 2
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4293597400
+	partName = CompoundPart
+	pos = -0.08737951,17.42309,2.335467
+	attPos = 0,0,0
+	attPos0 = -0.08571788,0.5333818,-0.3199056
+	rot = 0.5609856,-0.4304593,-0.4304596,0.5609853
+	attRot = 0,0,0,1
+	attRot0 = 3.299483E-08,0.6087615,4.226536E-08,-0.7933533
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4293599096
+	sym = strutConnector_4293597464
+	sym = strutConnector_4293597336
+	srfN = srfAttach,trussPiece3x_4293710518
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4293617614
+		pos = -0.9984628,-0.315753,-0.3880461
+		rot = 0,-7.502346E-08,0.7071068,0.7071068
+		dir = -0.8940516,-0.2827338,-0.3474671
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Pylon1_4293503572
+	partName = Part
+	pos = -0.001661525,17.63926,2.925077
+	attPos = 0,0,0
+	attPos0 = 4.792621E-08,1.122991,-0.5360836
+	rot = -1.065814E-14,-1,-1.788139E-07,4.37114E-08
+	attRot = 0,0,0,1
+	attRot0 = 3.552714E-15,0.7071068,-0.7071068,-1.658092E-15
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Pylon1_4293695340
+	sym = KAS.Pylon1_4293503608
+	sym = KAS.Pylon1_4293503536
+	srfN = srfAttach,trussPiece3x_4293710518
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussPiece3x_4293710494
+	partName = Part
+	pos = 1.798407,17.10318,0.00201654
+	attPos = 0,0,0
+	attPos0 = 1.800069,-1.183737,-7.889486E-08
+	rot = -0.5000001,-0.4999999,0.5000001,-0.4999999
+	attRot = 0,0,0,1
+	attRot0 = -0.5000001,-0.4999999,0.5000001,-0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.ContainerBay1_4293646124
+	link = KAS.ContainerBay1_4293645516
+	link = KAS.ContainerBay1_4293644828
+	link = KAS.ContainerBay1_4293643070
+	link = KAS.ContainerBay1_4293642132
+	link = KAS.ContainerBay1_4293641114
+	link = strutConnector_4293597336
+	link = KAS.Pylon1_4293503536
+	sym = trussPiece3x_4293711040
+	sym = trussPiece3x_4293710542
+	sym = trussPiece3x_4293710518
+	srfN = srfAttach,trussPiece3x_4293711820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293646124
+	partName = Part
+	pos = 2.915525,17.10318,0.7304907
+	attPos = 0,0,0
+	attPos0 = -0.7284741,1.117118,-1.440028E-06
+	rot = 0.5,-0.5000002,-0.5,0.4999998
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000001,-0.4999998
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293637866
+	sym = KAS.ContainerBay1_4293647220
+	sym = KAS.ContainerBay1_4293646180
+	sym = KAS.ContainerBay1_4293646152
+	srfN = srfAttach,trussPiece3x_4293710494
+	attN = bottom,KAS.Container2_4293637866
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293637866
+	partName = Part
+	pos = 2.915526,17.10318,0.707791
+	attPos = 0,0,0
+	attPos0 = 2.70569E-09,-0.02269977,-4.63307E-07
+	rot = 0.5000001,0.5,0.5,0.5
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = 0,1,-2.980232E-07,-1.937151E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293639478
+	sym = KAS.Container2_4293637938
+	sym = KAS.Container2_4293637902
+	attN = bottom,KAS.ContainerBay1_4293646124
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293645516
+	partName = Part
+	pos = 2.13348,17.10318,0.7309734
+	attPos = 0,0,0
+	attPos0 = -0.7289568,0.3350729,-1.160404E-06
+	rot = 0.5,-0.5000002,-0.5,0.4999998
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000001,-0.4999998
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293636666
+	sym = KAS.ContainerBay1_4293646042
+	sym = KAS.ContainerBay1_4293645572
+	sym = KAS.ContainerBay1_4293645544
+	srfN = srfAttach,trussPiece3x_4293710494
+	attN = bottom,KAS.Container2_4293636666
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293636666
+	partName = Part
+	pos = 2.13348,17.10318,0.7082736
+	attPos = 0,0,0
+	attPos0 = 2.705946E-09,-0.02269983,-2.248884E-07
+	rot = 0.5000001,0.5,0.5,0.5
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = 0,1,-2.980232E-07,-1.937151E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293637752
+	sym = KAS.Container2_4293636754
+	sym = KAS.Container2_4293636710
+	attN = bottom,KAS.ContainerBay1_4293645516
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293644828
+	partName = Part
+	pos = 1.347749,17.10318,0.7291543
+	attPos = 0,0,0
+	attPos0 = -0.7271377,-0.4506583,-8.791881E-07
+	rot = 0.5,-0.5000002,-0.5,0.4999998
+	attRot = 0,0,0,1
+	attRot0 = -0.5000002,0.4999999,-0.5000001,-0.4999998
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293635450
+	sym = KAS.ContainerBay1_4293645434
+	sym = KAS.ContainerBay1_4293644884
+	sym = KAS.ContainerBay1_4293644856
+	srfN = srfAttach,trussPiece3x_4293710494
+	attN = bottom,KAS.Container2_4293635450
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293635450
+	partName = Part
+	pos = 1.347749,17.10318,0.7064543
+	attPos = 0,0,0
+	attPos0 = 2.706017E-09,-0.02269995,-1.056791E-07
+	rot = 0.5000001,0.5,0.5,0.5
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = 0,1,-2.980232E-07,-1.937151E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293636544
+	sym = KAS.Container2_4293635554
+	sym = KAS.Container2_4293635502
+	attN = bottom,KAS.ContainerBay1_4293644828
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293643070
+	partName = Part
+	pos = 2.926379,17.10318,-0.725487
+	attPos = 0,0,0
+	attPos0 = 0.7275035,1.127972,-1.270343E-06
+	rot = 0.5000001,0.4999999,-0.4999998,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999998,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293629572
+	sym = KAS.ContainerBay1_4293644746
+	sym = KAS.ContainerBay1_4293643126
+	sym = KAS.ContainerBay1_4293643098
+	srfN = srfAttach,trussPiece3x_4293710494
+	attN = bottom,KAS.Container2_4293629572
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293629572
+	partName = Part
+	pos = 2.926379,17.10318,-0.702787
+	attPos = 0,0,0
+	attPos0 = 2.706088E-09,-0.02270001,-1.420677E-08
+	rot = -0.4999999,0.5,-0.5,0.5
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = 0,-1,-3.278255E-07,-1.937151E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293633486
+	sym = KAS.Container2_4293629692
+	sym = KAS.Container2_4293629632
+	attN = bottom,KAS.ContainerBay1_4293643070
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293642132
+	partName = Part
+	pos = 2.198807,17.10318,-0.7252868
+	attPos = 0,0,0
+	attPos0 = 0.7273033,0.4004006,-1.010167E-06
+	rot = 0.5000001,0.4999999,-0.4999998,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999998,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293628090
+	sym = KAS.ContainerBay1_4293642988
+	sym = KAS.ContainerBay1_4293642188
+	sym = KAS.ContainerBay1_4293642160
+	srfN = srfAttach,trussPiece3x_4293710494
+	attN = bottom,KAS.Container2_4293628090
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293628090
+	partName = Part
+	pos = 2.198807,17.10318,-0.7025868
+	attPos = 0,0,0
+	attPos0 = 2.70596E-09,-0.02269995,2.242118E-07
+	rot = -0.4999999,0.5,-0.5,0.5
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = 0,-1,-3.278255E-07,-1.937151E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 3750
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293629434
+	sym = KAS.Container2_4293628226
+	sym = KAS.Container2_4293628158
+	attN = bottom,KAS.ContainerBay1_4293642132
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pylon1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 1
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.ContainerBay1_4293641114
+	partName = Part
+	pos = 1.53606,17.10318,-0.7261588
+	attPos = 0,0,0
+	attPos0 = 0.7281753,-0.2623469,-7.730466E-07
+	rot = 0.5000001,0.4999999,-0.4999998,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = -0.4999999,-0.5000002,0.4999998,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KAS.Container2_4293626826
+	sym = KAS.ContainerBay1_4293642050
+	sym = KAS.ContainerBay1_4293641170
+	sym = KAS.ContainerBay1_4293641142
+	srfN = srfAttach,trussPiece3x_4293710494
+	attN = bottom,KAS.Container2_4293626826
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModulePartBay
+		isEnabled = True
+		EVENTS
+		{
+			ContextMenuStore
+			{
+				active = True
+				guiActive = False
+				guiIcon = Store
+				guiName = Store
+				category = Store
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuRelease
+			{
+				active = True
+				guiActive = True
+				guiIcon = Release
+				guiName = Release
+				category = Release
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionGroupRelease
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Container2_4293626826
+	partName = Part
+	pos = 1.53606,17.10318,-0.703459
+	attPos = 0,0,0
+	attPos0 = 2.705896E-09,-0.02269983,3.434212E-07
+	rot = -0.4999999,0.5,-0.5,0.5
+	attRot = 0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = 0,-1,-3.278255E-07,-1.937151E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 4350
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Container2_4293627944
+	sym = KAS.Container2_4293626978
+	sym = KAS.Container2_4293626902
+	attN = bottom,KAS.ContainerBay1_4293641114
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleContainer
+		isEnabled = True
+		EVENTS
+		{
+			EditContents
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Edit Container
+				guiName = Edit Container
+				category = Edit Container
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuOpenContainer
+			{
+				active = True
+				guiActive = True
+				guiIcon = Open container
+				guiName = Open container
+				category = Open container
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		CONTENT
+		{
+			name = KAS.CPort1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Anchor
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Hook.GrapplingHook
+			qty = 2
+		}
+		CONTENT
+		{
+			name = KAS.Hook.Magnet
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Pipe1
+			qty = 1
+		}
+		CONTENT
+		{
+			name = KAS.Strut1
+			qty = 2
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4293597336
+	partName = CompoundPart
+	pos = 2.331789,17.42309,0.08773458
+	attPos = 0,0,0
+	attPos0 = -0.085718,0.5333817,-0.3199055
+	rot = 0.09229591,0.0922959,-0.7010576,0.7010573
+	attRot = 0,0,0,1
+	attRot0 = -7.450581E-09,0.6087615,6.705523E-08,-0.7933533
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4293599096
+	sym = strutConnector_4293597464
+	sym = strutConnector_4293597400
+	srfN = srfAttach,trussPiece3x_4293710494
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4293619314
+		pos = -0.9984663,-0.3157524,-0.3880479
+		rot = 0,8.898555E-08,0.7071068,0.7071068
+		dir = -0.8940516,-0.2827338,-0.3474671
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KAS.Pylon1_4293503536
+	partName = Part
+	pos = 2.921398,17.63926,0.002016492
+	attPos = 0,0,0
+	attPos0 = 4.796311E-08,1.122991,-0.5360837
+	rot = -1.192093E-07,-0.7071068,-1.192093E-07,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0,0.7071068,-0.7071068,7.487982E-10
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = KAS.Pylon1_4293695340
+	sym = KAS.Pylon1_4293503608
+	sym = KAS.Pylon1_4293503572
+	srfN = srfAttach,trussPiece3x_4293710494
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}

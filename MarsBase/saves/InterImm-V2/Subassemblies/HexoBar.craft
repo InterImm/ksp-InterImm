@@ -1,0 +1,365 @@
+ship = HexoBar
+version = 0.90.0
+description = No description.
+type = None
+size = 0.5543642,2.847702,0.5543737
+PART
+{
+	part = strutOcto_4293164096
+	partName = Part
+	pos = 2.267044,20.16171,1.452095
+	attPos = 0,0,0
+	attPos0 = 2.267044,20.16171,1.452095
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4293164068
+	attN = top,strutOcto_4293164068
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = strutOcto_4293164068
+	partName = Part
+	pos = 2.267044,20.41918,1.452094
+	attPos = 0,0,0
+	attPos0 = -1.579167E-08,0.2574692,-9.536744E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4293164040
+	attN = top,strutOcto_4293164040
+	attN = bottom,strutOcto_4293164096
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = strutOcto_4293164040
+	partName = Part
+	pos = 2.267044,20.67665,1.452093
+	attPos = 0,0,0
+	attPos0 = -1.579167E-08,0.2574692,-9.536744E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4293164012
+	attN = top,strutOcto_4293164012
+	attN = bottom,strutOcto_4293164068
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = strutOcto_4293164012
+	partName = Part
+	pos = 2.267044,20.93412,1.452092
+	attPos = 0,0,0
+	attPos0 = -1.579168E-08,0.2574692,-9.536747E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4293163984
+	attN = top,strutOcto_4293163984
+	attN = bottom,strutOcto_4293164040
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = strutOcto_4293163984
+	partName = Part
+	pos = 2.267044,21.19159,1.452091
+	attPos = 0,0,0
+	attPos0 = -1.579167E-08,0.2574692,-9.536744E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4293163956
+	attN = top,strutOcto_4293163956
+	attN = bottom,strutOcto_4293164012
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = strutOcto_4293163956
+	partName = Part
+	pos = 2.267044,21.44906,1.45209
+	attPos = 0,0,0
+	attPos0 = -1.579167E-08,0.2574692,-9.536742E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4293163928
+	attN = top,strutOcto_4293163928
+	attN = bottom,strutOcto_4293163984
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = strutOcto_4293163928
+	partName = Part
+	pos = 2.267044,21.70653,1.452089
+	attPos = 0,0,0
+	attPos0 = -1.579145E-08,0.2574673,-9.536749E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4293163900
+	attN = top,strutOcto_4293163900
+	attN = bottom,strutOcto_4293163956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = strutOcto_4293163900
+	partName = Part
+	pos = 2.267044,21.964,1.452088
+	attPos = 0,0,0
+	attPos0 = -1.579167E-08,0.2574695,-9.536742E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4293163872
+	attN = top,strutOcto_4293163872
+	attN = bottom,strutOcto_4293163928
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = strutOcto_4293163872
+	partName = Part
+	pos = 2.267044,22.22147,1.452087
+	attPos = 0,0,0
+	attPos0 = -1.579167E-08,0.2574692,-9.536743E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4293163844
+	attN = top,strutOcto_4293163844
+	attN = bottom,strutOcto_4293163900
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = strutOcto_4293163844
+	partName = Part
+	pos = 2.267044,22.47894,1.452086
+	attPos = 0,0,0
+	attPos0 = -1.579164E-08,0.2574692,-9.536743E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4293163816
+	attN = top,strutOcto_4293163816
+	attN = bottom,strutOcto_4293163872
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = strutOcto_4293163816
+	partName = Part
+	pos = 2.267044,22.7364,1.452085
+	attPos = 0,0,0
+	attPos0 = -1.579167E-08,0.2574695,-9.536743E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,strutOcto_4293163844
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
